@@ -29,5 +29,6 @@ deepspeed main.py \
    --seed 1234 \
    --zero_stage $ZERO_STAGE \
    --deepspeed \
+   --gradient_checkpointing \
    --output_dir $OUTPUT \
    &> $OUTPUT/training.log
